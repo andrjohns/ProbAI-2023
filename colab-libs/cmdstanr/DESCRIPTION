@@ -1,0 +1,61 @@
+Package: cmdstanr
+Title: R Interface to 'CmdStan'
+Version: 0.5.3
+Date: 2022-04-24
+Authors@R: 
+    c(person(given = "Jonah", family = "Gabry", role = c("aut", "cre"),
+           email = "jsg2201@columbia.edu"),
+      person(given = "Rok", family = "Češnovar", role = "aut",
+           email = "rok.cesnovar@fri.uni-lj.si"),
+      person(given = "Andrew", family = "Johnson", role = "aut",
+            comment = c(ORCID = "0000-0001-7000-8065")),
+      person(given = "Ben", family = "Bales", role = "ctb"),
+      person(given = "Mitzi", family = "Morris", role = "ctb"),
+      person(given = "Mikhail", family = "Popov", role = "ctb"),
+      person(given = "Mike", family = "Lawrence", role = "ctb"),
+      person(given = c("William", "Michael"), family = "Landau", role = "ctb",
+           email = "will.landau@gmail.com", comment = c(ORCID = "0000-0003-1878-3253")),
+      person(given = "Jacob", family = "Socolar", role = "ctb"))
+Description: A lightweight interface to 'Stan' <https://mc-stan.org>.
+    The 'CmdStanR' interface is an alternative to 'RStan' that calls the command
+    line interface for compilation and running algorithms instead of interfacing
+    with C++ via 'Rcpp'. This has many benefits including always being compatible
+    with the latest version of Stan, fewer installation errors, fewer unexpected
+    crashes in RStudio, and a more permissive license.
+License: BSD_3_clause + file LICENSE
+URL: https://mc-stan.org/cmdstanr/, https://discourse.mc-stan.org
+BugReports: https://github.com/stan-dev/cmdstanr/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Roxygen: list(markdown = TRUE, r6 = FALSE)
+SystemRequirements: CmdStan
+        (https://mc-stan.org/users/interfaces/cmdstan)
+Depends: R (>= 3.5.0)
+Imports: checkmate, data.table, jsonlite (>= 1.2.0), posterior (>=
+        1.1.0), processx (>= 3.5.0), R6 (>= 2.4.0), withr (>= 2.5.0)
+Suggests: bayesplot, knitr (>= 1.37), loo (>= 2.0.0), rlang (>= 0.4.7),
+        rmarkdown, testthat (>= 2.1.0), Rcpp, RcppEigen
+VignetteBuilder: knitr
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: cmdstanr
+RemoteUsername: stan-dev
+RemoteRef: HEAD
+RemoteSha: 01aa7f1b1930f76fe7fd4a14153f80a390355cf3
+GithubRepo: cmdstanr
+GithubUsername: stan-dev
+GithubRef: HEAD
+GithubSHA1: 01aa7f1b1930f76fe7fd4a14153f80a390355cf3
+NeedsCompilation: no
+Packaged: 2023-06-14 08:51:28 UTC; root
+Author: Jonah Gabry [aut, cre],
+  Rok Češnovar [aut],
+  Andrew Johnson [aut] (<https://orcid.org/0000-0001-7000-8065>),
+  Ben Bales [ctb],
+  Mitzi Morris [ctb],
+  Mikhail Popov [ctb],
+  Mike Lawrence [ctb],
+  William Michael Landau [ctb] (<https://orcid.org/0000-0003-1878-3253>),
+  Jacob Socolar [ctb]
+Maintainer: Jonah Gabry <jsg2201@columbia.edu>
+Built: R 4.3.0; ; 2023-06-14 08:51:29 UTC; unix
